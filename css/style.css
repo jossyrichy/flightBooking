@@ -1,0 +1,482 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "sans-serif",sans-serif;
+	scroll-behavior: smooth;
+}
+	/* navbar styling*/
+
+.btn-outline-info:hover{
+	background-color: lightblue;
+}
+.navbar-nav{
+	margin-left: 80px;
+}
+.active{
+	text-decoration: underline solid 2px;
+	text-decoration-style: solid;
+	text-underline-position: under;	
+}
+.nav-link{
+	font-weight: bold;
+}
+.nav-link:hover{
+	color: skyblue !important;
+	text-decoration: underline solid 2px;
+	text-underline-position: under;
+	transition: 0.5s;
+}
+#title{
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	letter-spacing: 2px;
+}
+	/*form styling*/
+
+#form{
+	max-height: "";
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 2px 8px 6px 6px gray;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 0;
+	border-left: 3px;
+	border-style: solid;
+	border-color: #e26e29;
+}
+#form .input-group{
+	margin: 0 8px 15px 0;
+	border: none!important;
+	padding: 15px;
+	background-color: white;
+	box-shadow: 1px solid black;
+	outline: none!important;
+}
+#input3 #input-grp{
+	margin-left: 40px;
+	font-size: 16px!important;
+	margin-bottom: 20px;
+}
+
+.form-control{
+	width: 250px;
+	display: inline-block;
+}
+.flight{
+	border: 1px solid #e9edf1!important;
+	color: #ffffff!important;
+	font-weight: 500;
+	background-color: lightblue!important;
+	width: 100%;
+	padding: 8px;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.flight:hover{
+	background-color: tomato!important;
+	color: white!important;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button
+{
+	-webkit-appearance: none!important;
+	margin: 0!important;
+}
+.select-date::-webkit-calender-picker-indicator
+{
+	background-color: seagreen!important;
+}
+/*input[type=date]::-webkit-datetime-edit-text{
+	-webkit-appearance: none;
+	display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+	-webkit-appearance: none;
+	display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field{
+	-webkit-appearance: none;
+	display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field{
+	-webkit-appearance: none;
+	display: none;
+}*/
+input[type=date]:not(.has-value):before{
+	content: attr(placeholder);
+	margin-right: 10px;
+	font-weight: 700;
+}
+/*::-webkit-input-placeholder{
+	color: red !important;
+}*/
+
+
+
+section{
+	padding-bottom: 45px;
+	background-size: cover;
+}
+	/*Flight Promos and Products styling*/
+
+#column{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}
+#column .column2{
+	max-width: 450px;
+}
+#column .column3{
+	border: none!important;
+	outline: none!important;
+}
+#column .column3 img{
+	border: none!important;
+	cursor: pointer;
+}
+#column .column3 .card-body{
+	border-top: 1px;
+	border-right: 1px;
+	border-left: 1px;
+	border-style: solid;
+	box-shadow: 1px 1px 1px 1px lightgray; 
+	border-color: white!important;
+
+}
+#column .column3 p{
+	font-size: 15px;
+	color: gray!important;
+	position: relative;
+	top: -5px;
+}
+#column .column3 a{
+	position: relative;
+	top: 5px;
+	left: -5px;
+	color: skyblue!important;
+}
+#column2 .column{
+	width: 360px;
+	border-top: 1px solid lightgray!important;
+	border-right: 2px;
+	border-left: 2px;
+	border-bottom: 3px;
+	border-radius: 5px;
+	border-style: solid;
+	box-shadow: 1px 2px 1px 1px white; 
+	border-color: lightgray;
+	margin-bottom: 33px;
+}
+#column2 .column a {
+	margin-left: 15px;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+	color: skyblue!important;
+}
+#column2 .column a h5{
+	position: relative;
+	top: 20px;
+	color: #000000!important;
+	font-size: 17px;
+}
+#column2 .column a span{
+	position: relative;
+	top: 10px;
+}
+#column .column3 .card-body:hover{
+	cursor: pointer;
+	box-shadow: 1px 2px 3px 2px lightgray;
+}
+#column #column2 .column:hover{
+	cursor: pointer;
+	box-shadow: 1px 2px 3px 2px lightgray;
+}
+
+	/*customer support page styling*/
+
+.customer{
+	border-top: 1px solid white!important;
+	border-right: 2px;
+	border-left: 2px;
+	border-bottom: 3px;
+	border-radius: 5px;
+	border-style: solid;
+	box-shadow: 1px 2px 1px 1px white; 
+	border-color: lightgray;
+	/*padding: 10px;*/
+	margin-top: 10px;
+}
+#customer{
+	flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}
+#customer .customer{
+	max-width: 558px;
+	position: relative;
+}
+.icon span i{
+	font-size: 20px;
+	margin-right: 18px;
+}
+.customer p{
+	margin-left: 40px;
+	font-size: 16px;
+}
+.customer a{
+	position: relative;
+	top: -5px;
+	margin-left: 30px;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	color: skyblue;
+}
+.customer a:hover{
+	background-color: lightblue;
+	cursor: pointer;
+}
+	/*decision styling*/
+
+.row-decision{
+	flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.row-decision .decision{
+	position: relative;
+	height: 130px;
+	max-width: 558px;
+	margin-top: 15px;
+	border-top: 2px;
+	border-bottom: 2px;
+	border-left: 2px
+	border-right: 2px;
+	border-style: solid;
+	border-color: white!important;
+	box-shadow: 1px 2px 2px 2px lightgray;
+	border-radius: 5px; 
+}
+.row-decision .decision .decision1{
+	position: absolute;
+	width: 115px;
+	height: 130px;
+	border-radius: 5px;
+	left: -2px;
+	top: -2px;
+}
+.row-decision .decision .decision1 span{
+	position: absolute;
+	top: 37px;
+	margin-left: 37px;
+}
+.row-decision .decision .decision1 span i{
+	font-size: 40px;
+	color: white;
+}
+.row-decision .decision h5{
+	position: absolute;
+	top: 20px;
+	left: 135px;
+}
+.row-decision .decision a{
+	position: absolute;
+	top: 55px;
+	left: 135px;
+	text-decoration: none;
+	color: white!important;
+	padding: 10px;
+	border-radius: 3px;
+}
+.row-decision .decision a:hover{
+	background-color: skyblue!important;
+	cursor: pointer;
+}
+.plan-trip a{
+	text-decoration: none;
+	color: gray;
+	margin-bottom: 5px;
+}
+.plan-trip a:hover{
+	text-decoration: underline 1px solid gray;
+	cursor: pointer;
+}
+.link{
+	text-decoration: none;
+	color: gray;
+	margin-bottom: 5px;
+}
+.link:hover{
+	text-decoration: underline 1px solid gray;
+	color: gray;
+	cursor: pointer;
+}
+.custom-select{
+	position: relative;
+	left: -15px;
+}
+.footer a{
+	text-decoration: none;
+	color: gray;
+	margin-right: 10px;
+}
+.footer a:hover{
+	text-decoration: underline 1px solid gray;
+	cursor: pointer;
+}
+.footer-icon a{
+	text-decoration: none;
+	margin-right: 3px;
+	color: gray!important;
+}
+.footer-icon a i{
+	font-size: 15px;
+	border: 1px solid gray;
+	border-radius: 50%;
+	padding: 5px;
+}
+	/*sign up styling*/
+.modal{
+	max-height: "";
+	margin: 10px;
+	padding: 10px;
+}
+.modal input{
+	padding: 8px;
+	margin-bottom: 15px;
+}
+.modal select{
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+.modal button i{
+	position: relative;
+	left: -100px;
+	font-size: 25px;
+}
+.modal button .fa-user-plus{
+	position: relative;
+	left: -150px;
+}
+.modal button .fa-google{
+	position: relative;
+	left: -110px;
+}
+.form-control:focus {
+  border-color: lightblue;
+  box-shadow: inset 0 1px 1px 	lightgray, 0 0 8px gray;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px){
+	.accomodation{
+		position: relative;
+		left: -15px;
+	}
+	#form input{
+		width: 100%;
+		position: relative;
+	}
+	#form select{
+		width: 100%;
+	}
+	#input3{
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+	}
+	#input3 label{
+		position: relative;
+		left: 40px;
+		top: -25px;
+	}
+	#input3 .label-option{
+		position: relative;
+		left: 110px;
+		top: -38px;
+	}
+	#input3 .input3{
+		position: relative;
+		left: -30px;
+	}
+	#column2{
+		padding: 10px;
+	}
+	#column2 .column{
+		width: 100%;
+		padding: 10px;
+	}
+	#column2 .column{
+		position: relative;
+		height: 120px;
+	}
+	#column2 .column img{
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+	}
+	#column2 .column a{
+		position: absolute;
+		left: 110px;
+	}
+	.column3{
+		margin-bottom: 15px;
+	}
+	#card-section{
+		padding: 20px;
+	}
+	#customer-section{
+		position: relative;
+		top: -50px;
+		padding: 20px;
+	}
+	#decision-section{
+		position: relative;
+		top: -40px;
+		padding: 0px 25px;
+	}
+	#kdtex-section{
+		padding: 20px;
+	}
+	#sub-section{
+		padding: 0px 25px;
+	}
+	#sub-section .plan-trip h5{
+		margin-top: 15px;
+	}
+	#footer-form-section{
+		padding:  0px 25px;
+	}
+	#footer-form-section hr{
+		position: relative;
+		top: -33px;
+	}
+	#app-btn{ 
+		left: -100px;
+		top: -12px;
+	}
+	#sub-btn{
+		position: relative;
+		left: -12px;
+	}
+	#footer-section{
+		padding: 0px 25px;
+	}
+
+
+}
